@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
         showButton.setOnClickListener {
             val inputText = enterText.text.toString()
             val unsortedArray = inputText.split(",").mapNotNull { it.trim().toIntOrNull() }.toTypedArray()
-            if(unsortedArray.size > 9){
+            if(unsortedArray.size > 8){
                 val toast = Toast.makeText(this, "Entered number length should be less than 9", Toast.LENGTH_LONG)
                 toast.show()
             }else if(unsortedArray.size <= 1 ){
